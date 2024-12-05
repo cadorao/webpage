@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Thermal Two-Phase Flow Lab</title>
+	  <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	   <style>
+            /*Code to change color of active link*/
+            .navbar-nav > .active > a {
+                color: red;
+            }
+        </style>
+	  	<link rel="icon" href="images/Th2LabLogo_transparent.png"  sizes="16x16 32x32" type="image/png">
+	  
+	  
+  </head>
+  <body style="padding-top: 70px">
+  	<div class="container-fluid">
+  	  <div class="container">
+		  
+	   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> 
+		         <a class="navbar-brand" href="#">  <img src="images/Th2FLabLogo2_transparent3.png" width="319" height="62" alt=""/></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  	      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  	        <ul class="navbar-nav mr-auto">
+  	          <li class="nav-item" > <a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a> </li>
+  	          
+  	          <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Research </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_wetting.html">Wetting and Droplet Dynamics</a> 
+				  <a class="dropdown-item" href="index_numerics.html">Numerical Methods for Interfacial Flows</a>
+				  <a class="dropdown-item" href="index_thermohydraulics.html">Thermohydraulics</a> 
+				  <a class="dropdown-item" href="index_acoustofluidicsR.html">Acoustofluidics and Biosensors</a>
+					
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_previousResearch.html">Previous Research</a> </div>
+              </li>
+  	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> People&nbsp; </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_PI.html">PIs</a> 
+					<a class="dropdown-item" href="index_team.html">Team</a>
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_alumni.html">Alumni</a></div>
+              </li>
+  	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Facilities&nbsp; </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_TPFI.html">Two-phase flow instabilities</a> 
+				  <a class="dropdown-item" href="index_acoustofluidics.html">Acoustofluidics and biosensors</a>
+				  <a class="dropdown-item" href="index_condensation.html">Condensation</a>
+				  <a class="dropdown-item" href="index_DHM.html">Digital Holographic Microscopy</a>
+				  <a class="dropdown-item" href="index_microPIVLIF.html">MicroPIV-LIF</a>
+				  <a class="dropdown-item" href="index_thermography.html">Thermography</a>
+					
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_equipment.html">Equipment</a></div>
+              </li>
+			  <li class="nav-item"> <a class="nav-link" href="index_projects.html">Projects</a> </li>
+			  <li class="nav-item"> <a class="nav-link" href="index_innovation.html">Innovation</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_publications.html">Publications</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_education.html">Education</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_gallery.html">Gallery</a></li>
+	
+            </ul>
+  	        <form class="form-inline my-2 my-lg-0">
+            </form>
+          </div>
+        </nav>
+      </div>
+	  
+	  
+	  
+	    <h6>&nbsp;</h6> 
+	  
+	  <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+			  
+		    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+			    <ol class="carousel-indicators">
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+		      </ol>
+			    <div class="carousel-inner" role="listbox">
+					
+			      <div class="carousel-item active"> 
+					  <img class="d-block mx-auto" src="images/Previous/banner_previous.png"  alt="First slide">
+				    <div class="carousel-caption">
+		            </div>
+		          </div>
+			      
+				  <div class="carousel-item"> 
+					  <img class="d-block mx-auto" src="images/Previous/gasliquid.png" alt="First slide">
+					  <div class="carousel-caption">
+		              </div>
+		          </div>
+					
+					<div class="carousel-item"> 
+					  <img class="d-block mx-auto" src="images/Previous/previous_GL_3.png" alt="First slide">
+					  <div class="carousel-caption">
+		              </div>
+		          </div>
+					
+		      </div>
+			    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+        </div>
+      </div>
+    </div>
+	  
+     
+	 <hr>	
+		
+	<div class="container">
+		<h2></h2>
+		<p align="justify"> 
+			
+		
+		</p>
+	  </div>
+	</div>
+	
+	  
+	    
+	    <div class="container">
+		<h3>Gas-Liquid separation</h3>
+	</div>
+	  
+	  	  
+	  	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify"> The goal of this project was to develop and test new technology in the field of gas-liquid separation. A new concept of a gas-liquid separator was developed. Lab tests were performed using air and water as working fluids. A high-pressure prototype was tested at CEESI facility, USA, with hydrocarbon fluids at 60bar, with sucessful proof of concept of the new technology. This project resulted in a spin-off company (InnSep AS). </p>
+		
+			 
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/Previous/GasLiquidSeparation.png" width="350" height="300" alt=""/>
+				
+			</center>
+			<h6>&nbsp;</h6> 
+    	</div>
+  	</div>
+
+
+		
+</div>		
+	
+	  	<div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+<h6>&nbsp; </h6>
+
+	<p align="justify"> </p>
+
+
+		<h5> Undergraduate and Msc thesis </h5>	
+
+ 		<p align="justify"> 	CFD study of a rotating gas-liquid separator. Stene, Mari (2013)</p>
+
+	<p align="justify"> Mari Stene, Experimental and CFD study of a rotating gas-liquid separator. 2012</p>
+<p align="justify"> Mathin Sveier, Study of the droplet-interface dynamics related to liquid-liquid separators. 2012.</p>
+<p align="justify"> Jørgen Thomassen, Study of droplet-wire fragmentation related to gas liquid separators. 2012</p>
+<p align="justify"> Andreas Strøm,. Study droplet-wire impact and its effect in the design of gas scrubbers. 2011</p>
+
+			
+		<h5> Publications  </h5>	
+			<p align="justify"> Carlos A. Dorao and Maria Fernandino <b> A separator for a multi-phase flow</b>.  Intl. Patent WO2022090537A1 2020-10-30, European Patent EP4237122A1 2020-10-30, US Patent US20230330580A1 2020-10-30, South Korea Patent KR20230105337A 2020-10-30, Japan Patent CJP2023548218A 2020-10-30, Canada Patent CA3196285A1 2020-10-30, Australia Patent AU2021372817A1 2020-10-30. </p>
+
+	<p align="justify"> Carlos A. Dorao and Maria Fernandino <b> Separator for a gas/liquid flow</b>.  Intl. Patent WO2010143978A1 2010-06-11, European Patent EP2440309A1 2010-06-11, Eurasian Patent EA027552B1 2010-06-11, US Patent US9168475B2 2010-06-11, Mexico Patent MX2011013195A 2010-06-11, China Patent CN102481504B 2010-06-11, Norway Patent NO330124B1 2009-06-11, Canada Patent CA2764605C 2010-06-11, Australia Patent AU2010259355B2 2010-06-11, Brazil Patent BRPI1010728A2 2010-06-11. </p>    
+			
+			
+		</div>
+      </div>
+	</div> 
+
+		
+	  
+	  	<hr width="85%" size="20" color="blue" noshade>	  
+
+	  
+	  
+	    
+	    <div class="container">
+		<h3>Liquid-liquid gravity separation</h3>
+	</div>
+	  
+	  	  
+	  	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">  Separation of oil and water is a critical field processing operation in the oil and gas industry. Early stage oil-water separators are mainly operated as gravity separators, ending up in large gravity settling tanks due to the slow migration velocities of the dispersed phase. Owing to its large dimensions, this equipment is particularly costly to purchase and install. This is true especially for offshore and subsea installations. Optimization of gravity separators can be possible with better understanding of the phenomena governing the sedimentation process.
+
+Our activities on this project included on-demand production of micron-sized droplets, NIR visualization of water droplets in crude oil and investigation of droplet-droplet and droplet-interface coalescence for single- and multiple-droplets conditions. </p>
+		
+			 
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/Previous/LiquidSeparation.png" width="350" height="300" alt=""/>
+				
+			</center>
+			<h6>&nbsp;</h6> 
+    	</div>
+  	</div>
+
+
+		
+</div>		
+	
+	  	<div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+<h6>&nbsp; </h6>
+
+	<p align="justify"> </p>
+
+
+		<h5> Undergraduate and Msc thesis </h5>	
+
+ 		<p align="justify"> Experimental and numerical investigation of oil-water separation. Sørbø, Vegard. 2014</p>
+			
+      <p class="interline">Water droplets settling in crude oil: effect of neighbouring droplets and temperature , Kamilla Sjursen. 2014.</p>
+			
+		<p align="justify"> Study of the parameters to generate different sizes of micro-droplets. Vera Palazon, Antonio Jose. 2013</p>
+		<p align="justify"> Experimental and modeling study of the droplet dynamics related to liquid-liquid separators. Bjerknes, Jenny Victoria. 2013	</p>
+			
+		<h5> Publications  </h5>	
+			<p align="justify"> Fernandino M., La Forgia N., Vera A.J., Bjerknes J., Dorao C.A. (2013). Droplet generation using electrical pulses for studying liquid-liquid systems. 8th International Symposium on Measurement Techniques for Multiphase Flows (ISMTMF’2013), 13-15 December, Guangzhou, P.R. China.</p>
+			
+		</div>
+      </div>
+	</div> 
+
+		
+	  
+	  	<hr width="85%" size="20" color="blue" noshade>	  
+
+
+	  
+	
+	    <div class="container">
+		<h3>Game theory applied to Decision Making </h3>
+	</div>
+	  
+	  	  
+	  	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">  Every day, people need to solve problems. These solutions imply to make decisions. Decisions can vary from trivial to more complex. All decisions contain a set of alternatives and/or values and their processing requirea a structuring and valuation thereof. Our research has focused on developing an integrated multi-criteria and
+multi-level framework for decision making on projects, to facilitate effective
+and efficient utilization of information and computational resources in order to improve
+the efficiency and effectiveness in these projects. The work was based on game theory as a constructor of the
+integrated framework considering the cooperative and non-cooperative Nash and Leader-Followers games concepts. 
+				
+				</p>
+		
+			 
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/Previous/DM.png" width="350" height="300" alt=""/>
+				
+			</center>
+			<h6>&nbsp;</h6> 
+    	</div>
+  	</div>
+
+
+		
+</div>		
+	
+	  	<div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+<h6>&nbsp; </h6>
+
+	<p align="justify"> </p>
+
+<h5> Undergraduate and Msc thesis </h5>
+
+			<p align="justify">Sultan Pwaga. Natural gas liquefaction processes onboard an LNG FPSO. 2011. </p>
+			<p align="justify">Mads Vegard Øverland. Evaluation of small nuclear power plant for supporting remote oil and gas operations. 2011. </p>
+			<p align="justify">Eirik Tonatiuh Ødegård. Modeling and evaluation of LNG heat exchangers. 2011.</p>
+			<p align="justify">Mithun Thomas Kadambamattam. Evaluation of the impact of the motion of offshore structures in the design and operation of process onboard LNG FPSO. 2011.</p>
+		 <p align="justify">Lars Heimdal. Integration of cryogenic CO2 separation technologies with
+LNG regasification plant. 2011. </p>
+<p align="justify">Andreas Strøm. Evaluation of cryogenic CO2/H2S capture technologies in
+natural gas. 2011. </p>
+<p align="justify">Simen Haukås Martinsen. Cryogenic CO2/H2S separation from natural gas.
+2011. </p>
+<p align="justify">Mads Vegard Øverland. Evaluation of small nuclear power plant for supporting
+remote oil and gas operations. 2011. </p>
+			
+ <p align="justify">Gaute Glomlien. Evaluation of technologies for transferring LNG from a
+carrier to on-shore LNG tanks. 2012.  </p>
+ <p align="justify">Caroline Bauge Gulliksen. Novel Processes for removal of CO2/H2S in natural
+gas streams. 2012. </p>
+<p align="justify">Sultan Pwaga. Sensitivity analysis of proposed LNG liquefaction processes
+for LNG FPSO. 2011. </p>
+<p align="justify">Eirik Tonatiuh Ødegård. Modeling and optimization of LNG processes. 2012.</p>
+<p align="justify">Simen Haukås Martinsen. Evaluation of novel processes for removal of gas
+contaminants. 2012.</p>
+<p align="justify">Carlos Eduardo Sanchez. Decision making methodology for the selection of
+gas-liquid separators. 2012. </p>
+<p align="justify">Mohamad Majzoub. Evaluation and Selection of the pre-cooling stage for
+LNG processes. 2012. </p>
+<p align="justify">Mads Vegard Øverland. Analysis of unconventional natural gas resources
+and possible monetization. 2011. </p>
+			
+ <h5> Publications  </h5>
+<p align="justify">Castillo, L. and Dorao, C.A. (2012). Consensual decision-making model
+based on game theory for LNG processes. Energy Conversion and Management
+64, pp.387-396.</p>
+<p align="justify">Castillo, L. and Dorao, C.A. (2010). Influence of the plot area in an economical
+analysis for selecting small scale LNG technologies for remote gas
+production. Journal of Natural Gas Science and Engineering, 2, pp.302-309.</p>
+<p align="justify">Castillo, L. and Dorao, C.A. (2013). Conceptual Design of pre-cooling stage
+of LNG plants using propane or an ethane/propane mixture. Energy Conversion
+and Management, 65, pp.140-146.</p>
+<p align="justify">Castillo, L., Majzoub M., Di Scipio S. and Dorao, C.A. (2013). Conceptual
+analysis of the precooling stage for LNG processes. Energy Conversion and
+Management, 66, pp.41-47.</p>
+<p align="justify">Castillo, L. and Dorao, C.A. (2013). Decision-making in the oil and gas
+projects based on game theory: Conceptual</p>
+			
+		</div>
+      </div>
+	</div> 
+
+		
+	  
+	 
+
+	 
+	  
+	  <hr width="85%" size="20" color="blue" noshade>	
+
+	  
+	<h6>&nbsp; </h6>
+	  
+	 
+	<footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Thermal Two-Phase Flow Lab. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	 
+	  <!-- Default Statcounter code for newTh2PFLOW
+https://folk.ntnu.no/fernandi/ -->
+<script type="text/javascript">
+var sc_project=12997559; 
+var sc_invisible=1; 
+var sc_security="a79eac0b"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12997559/0/a79eac0b/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+		
+	 
+  </body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <title>Thermal Two-Phase Flow Lab</title>
+	  <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	   <style>
+            /*Code to change color of active link*/
+            .navbar-nav > .active > a {
+                color: red;
+            }
+        </style>
+	  	<link rel="icon" href="images/Th2LabLogo_transparent.png"  sizes="16x16 32x32" type="image/png">
+	  
+	  
+  </head>
+  <body style="padding-top: 70px">
+  <h6>&nbsp;</h6> 
+	  
+  	<div class="container-fluid">
+  	  <div class="container">
+		  
+	   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> 
+		         <a class="navbar-brand" href="#">  <img src="images/Th2FLabLogo2_transparent3.png" width="319" height="62" alt=""/></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  	      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  	        <ul class="navbar-nav mr-auto">
+  	          <li class="nav-item" > <a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a> </li>
+  	          
+  	          <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Research </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_wetting.html">Wetting and Droplet Dynamics</a> 
+				  <a class="dropdown-item" href="index_numerics.html">Numerical Methods for Interfacial Flows</a>
+				  <a class="dropdown-item" href="index_thermohydraulics.html">Thermohydraulics</a> 
+				  <a class="dropdown-item" href="index_acoustofluidicsR.html">Acoustofluidics and Biosensors</a>
+					
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_previousResearch.html">Previous Research</a> </div>
+              </li>
+  	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> People&nbsp; </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_PI.html">PIs</a> 
+					<a class="dropdown-item" href="index_team.html">Team</a>
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_alumni.html">Alumni</a></div>
+              </li>
+  	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Facilities&nbsp; </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_TPFI.html">Two-phase flow instabilities</a> 
+				  <a class="dropdown-item" href="index_acoustofluidics.html">Acoustofluidics and biosensors</a>
+				  <a class="dropdown-item" href="index_condensation.html">Condensation</a>
+				  <a class="dropdown-item" href="index_DHM.html">Digital Holographic Microscopy</a>
+				  <a class="dropdown-item" href="index_microPIVLIF.html">MicroPIV-LIF</a>
+				  <a class="dropdown-item" href="index_thermography.html">Thermography</a>
+					
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_equipment.html">Equipment</a></div>
+              </li>
+			  <li class="nav-item"> <a class="nav-link" href="index_projects.html">Projects</a> </li>
+			  <li class="nav-item"> <a class="nav-link" href="index_innovation.html">Innovation</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_publications.html">Publications</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_education.html">Education</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_gallery.html">Gallery</a></li>
+	
+            </ul>
+  	        <form class="form-inline my-2 my-lg-0">
+            </form>
+          </div>
+        </nav>
+      </div>
+	  
+	  
+	    <h6>&nbsp;</h6> 
+	  
+	  
+	  <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+			  
+		    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+			    <ol class="carousel-indicators">
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="3"></li>
+		      </ol>
+			    <div class="carousel-inner" role="listbox">
+			      <div class="carousel-item active"> 
+					  <img class="d-block mx-auto" src="images/Wetting/Wetting_4.png" alt="First slide">
+			        
+				    <div class="carousel-caption">
+		            </div>
+		          </div>
+			      <div class="carousel-item"> 
+					  <img class="d-block mx-auto" src="images/Wetting/Wetting_1.png" alt="First slide">
+					  <div class="carousel-caption">
+		            </div>
+		          </div>
+				  
+			      <div class="carousel-item"> 
+				    <img class="d-block mx-auto" src="images/Wetting/Wetting_3.png" alt="First slide">
+			        <div class="carousel-caption">
+		            </div>
+		          </div>
+					
+			      <div class="carousel-item"> 
+				    <img class="d-block mx-auto" src="images/Wetting/Wetting_2.png" alt="First slide">
+			        <div class="carousel-caption">
+		            </div>
+		          </div>
+					
+					
+		      </div>
+			    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+        </div>
+      </div>
+    </div>
+	  
+     
+	 <hr>	
+		
+	<div class="container">
+		<h2>Wetting and droplet dynamics  </h2>
+		<p align="justify"> Wetting is a common phenomenon in a variety of practical domains including self-cleaning and anti-icing surfaces, heat management in high heat fluxes systems, painting and coating, corrosion of turbine blades and aircrafts, separation and oil repellency, among others. Understanding the mechanisms controlling wetting and droplet dynamics is essential for the design of tailored, durable and optimal surfaces for these applications. However, wetting dynamics is controlled by complex solid-liquid interfacial interactions occurring in scales raging from molecular to millimetric sizes. This multiphysics and multiscale behaviour, in addition to the short timescale involved, constitute a challenge for the investigation and understanding of the phenomena involved. Our research focuses on tunning the solid-liquid interfacial interactions by designing and fabricating micro- and nano-structured surfaces. These surfaces provide us with a tool for studying the mechanisms controlling wetting and droplet dynamics. We study the forces, velocity, and the singular flow near the vicinity of contact lines with the aim of identifying the mechanisms governing the dynamic wetting process. We fabricate the surfaces in at NTNU NanoLab cleanroom, using micro-/nano-fabrication techniques, such as Laser and Electron Beam Lithography combined with dry and wet etching. These surfaces and their wetting properties are characterized by Scanning Electron Microscopy and optical tensiometer. Our experimental methods for studying wetting dynamics include high-speed cameras and laser systems for studying droplet impact dynamics, a micro-PIV-LIF system used for studying the flow and temperature field inside sessile droplets, high speed infrared thermography for observing the temperature field, digital holographic microscopy for studying the dynamics of contact lines, and long working distance microscopy for studies related to evaporation and condensation. The experimental studies are combined with analytical and numerical methods for helping in the interpretation of the phenomena.</p>
+	  </div>
+	</div>
+	
+
+	  
+	  
+	  
+	
+	<div class="container">  
+	  <div class="row">
+	    <div class="col-lg-12">
+			
+		   <p align="justify">&nbsp; </p>
+	    	<img src="images/Wetting/conicalStructures.png" width="1094" height="164" alt=""/> 
+		   <p align="justify">&nbsp; </p>
+		  
+	    </div>
+      </div>
+    </div>  
+	 
+	  
+	  <hr width="85%" size="20" color="blue" noshade>	
+  
+	  
+	  
+
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify"> We use <b>Digital Holographic Microscopy</b> to characterize the temporal evolution of the three-phase contact line during evaporation of a nano-liter droplet on a hydrophilic surface. This technique allows us to have an instantaneous description of the contact angle along the whole droplet periphery simultaneously. We compare the evaporation and contact line dynamics of an axisymmetric and a non-axisymmetric evaporating droplet, focusing on the stick and slip motion of the contact line and consequent local variations of contact angle.</p>
+		
+			<p align="justify">Zamani Asl M.M., Dorao C.A., Giacomello A., Fernandino M. (2023). Digital holographic microscopy for measurement of instantaneous contact angle of an evaporating droplet. Experiments in Fluids 64, 1-11.</p>
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/Wetting/conicalStructures4.png" width="350" height="350" alt=""/>
+				<h6>&nbsp;</h6> 
+			</center>
+    	</div>
+  	</div>
+</div>		
+	  
+<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>	 
+
+	  
+	  <div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			  <h6>&nbsp;</h6> 
+			  <center>
+			<img src="images/Wetting/dropletImpactRelaxation.png" width="350" height="350" alt=""/>
+			</center>
+		<h6>&nbsp;</h6> 
+			  
+	      </div>
+		<div class="col-lg-6">
+	<h1>&nbsp;</h1>    
+		  <center>
+				
+				 <p align="justify"> The <b>droplet impact</b> process on a solid surface is divided into a spreading phase where the droplet reaches the maximum deformation, followed by a retracting phase. However, in the case of surfaces with high contact angle hysteresis, these two phases are connected by a relaxation phase where the contact angle changes from the advancing to the receding contact angle almost without motion of the contact line. Our work shows that for superhydrophobic surfaces with large contact angle hysteresis, the relaxation time can be comparable to the spreading and retracting time. </p>
+
+			<h6>&nbsp;</h6> 
+			  <p align="justify">Zhang W., Dorao C.A., Fernandino M. (2023). Relaxation phase during droplet impact on superhydrophobic surfaces with high contact angle hysteresis. Applied Physics Letters 123, 111602.&nbsp;</p>
+
+				
+				
+		  </center>
+    	</div>
+  	</div>
+</div>		
+
+	  
+	 <hr width="85%" size="20" color="blue" noshade>	
+   
+	  <div class="container">
+		<h3>Previus work  </h3>
+	</div>
+	  
+	  	  	 	  	  
+<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			  	<h6>&nbsp;</h6> 
+			  <center>
+			<img src="images/Wetting/Wetting_cones_pillars .png" width="350" height="350" alt=""/>
+			</center>
+		<h6>&nbsp;</h6> 
+			  
+	      </div>
+		<div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+			<center>
+				 <p align="justify">In this work, we experimentally study <b>droplet impact</b> on conical structured surfaces with different conical geometries. We compare the performance of conical structures against similar cylindrical pillar structured surfaces to investigate the role of the side wall shape. We demonstrate that by changing the geometrical parameters of the conical structures, we are able to relax the conflict between low contact angle hysteresis and anti-impalement ability, obtaining surfaces allowing droplet bouncing even at high droplet impact velocity. </p>
+
+				<h6>&nbsp;</h6> 
+				<p align="justify"> Ding W., Dorao C.A., Fernandino M. (2022). Toward surfaces with droplet impact robustness and low contact angle hysteresis. Adv. Mater. Interfaces, 2102564.</p>
+			</center>
+    	</div>
+  	</div>
+</div>	
+
+	  
+	  
+<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>	 
+
+ 
+	  	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">
+				<b>Super-repellent surfaces</b> are relevant for several practical applications, such as water collection and self-cleaning and anti-icing surfaces. However, designing surfaces that can maintain their super-repellency when the surface is subjected to a humid environment has remained challenging. We show that a surface based on pyramical microstructures  with nanowires shows no degradation of water repellency properties during condensation, and shows better performance in terms of low droplet adhesion than similar surfaces composed of the more commonly used pillar structures. </p>
+		
+			<p align="justify">Zhang W., Ding W., Fernandino M., Dorao C.A. (2019). Water-repellent surfaces consisting of nanowires on micropyramidal structures. ACS Applied Nano Materials 2, 7696-7704.</p>
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/Wetting/conicalStructures3ai.png" width="350" height="350" alt=""/>
+			</center>
+					<h6>&nbsp;</h6> 
+    	</div>
+  	</div>
+</div>		
+
+	  
+	  
+	<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>	 
+
+	  
+	  
+<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			  		<h6>&nbsp;</h6> 
+			  <center>
+			<img src="images/Wetting/conicalStructures2ai.png" width="350" height="350" alt=""/>
+			</center>
+				<h6>&nbsp;</h6> 
+			  
+	      </div>
+		<div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+			<center>
+				
+				 <p align="justify"><b>Conical structures</b> can maintain a super-repellent state for intrinsic contact angles larger than 90 degrees. Futher, the transition from the Cassie-Baxter to the Wenzel state is controlled by the apex angle of the conical structures.</p>
+
+				<h6>&nbsp;</h6> 
+				<p align="justify">Ding W., Fernandino M., Dorao C.A. (2019). Conical micro-structures as a route for achieving super-repellency in surfaces with intrinsic hydrophobic properties. Applied Physics Letters 115, 053703.</p>
+
+				
+				
+			</center>
+    	</div>
+  	</div>
+</div>		
+
+	  
+<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>	 
+
+
+  <div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">The <b>Lotus leaf </b> and the <b> Ruellia Devosiana leaf </b> show opposite behaviour with ”similar” type of conical structures. The research perfomed in our group showed that&nbsp;these two effects can be reproduced by controlling a second level of  roughness.</p>
+			  <h1>&nbsp;</h1>  
+		
+			<p align="justify">Park I.W., Fernandino M., Dorao C.A. (2018) Wetting state transitions over hierarchical conical microstructures. Adv. Mater. Interfaces, 1701039.</p>
+			  
+        </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+				<img src="images/Wetting/conicalStructuresLotus.png" width="350" height="350" alt=""/>
+				
+			</center>
+					<h6>&nbsp;</h6> 
+    	</div>
+  	</div>
+</div>		
+
+
+	  
+	  
+
+  <hr width="85%" size="20" color="blue" noshade>	  
+	  
+	
+	  
+	  
+  <div class="container">
+		<h2>Publications </h2>
+   </div>
+	 
+    <div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+		  	<p align="justify"> Zhang W., Dorao C.A., Fernandino M. (2023). Relaxation phase during droplet impact on superhydrophobic surfaces with high contact angle hysteresis. Applied Physics Letters 123, 111602.</p>
+
+			<p align="justify"> Zamani Asl M.M., Dorao C.A., Giacomello A., Fernandino M. (2023). Digital holographic microscopy for measurement of instantaneous contact angle of an evaporating droplet. Experiments in Fluids 64, 1-11.</p>
+
+			<p align="justify"> Park I-W., Ribe J.M., Fernandino M., Dorao C.A. (2023). The criterion of the Cassie-Baxter and Wenzel wetting modes and the effect of elastic substrates on it. Advanced Materials and Interfaces 10, 2202439.</p>
+
+			<p align="justify"> Ding W., Dorao C.A., Fernandino M. (2022). Toward surfaces with droplet impact robustness and low contact angle hysteresis. Adv. Mater. Interfaces, 2102564.</p>
+
+			<p align="justify"> Ding W., Dorao C.A., Fernandino M. (2022). Improving superamphiphobicity by mimicking tree-branch topography. J. Colloid Interface Science 611, 118-128.</p>
+
+			<p align="justify"> Ding W., Dorao C.A., Fernandino M. (2021). Anisotropic wetting and final shape of droplets impacting on micropillars with non-vertical lateral walls. AIP Advances 11, 115319.</p>
+
+			<p align="justify"> Yu X., Dorao C.A., Fernandino M. (2021). Droplet evaporation during dropwise condensation due to deposited volatile organic compounds. AIP Advances 11, 085202.</p>
+		
+			<p align="justify">Zhang W., Ding W., Fernandino M., Dorao C.A. (2019). Water-repellent surfaces consisting of nanowires on micropyramidal structures. ACS Applied Nano Materials 2, 7696-7704.</p>
+
+			<p align="justify">Ding W., Fernandino M., Dorao C.A. (2019). Conical micro-structures as a route for achieving super-repellency in surfaces with intrinsic hydrophobic properties. Applied Physics Letters 115, 053703.</p>
+
+			<p align="justify">Auliano M., Auliano D., Fernandino M., Asinari P., Dorao C.A. (2019). Can wicking control droplet cooling? Langmuir 35, 6562-6570.</p>
+
+			<p align="justify">Auliano M., Auliano D., Fernandino M., Zhang P., Dorao C.A. (2018). Water droplet dynamics on a heated nanowire surface. App. Phys. Lett. 113, 253703.</p>
+
+			<p align="justify">Auliano M., Fernandino M., Zhang P., Dorao C.A. (2018). Water droplet impacting on overheated random Si nanowires. Int. J. Heat and Mass Transfer 124, 307-318.</p>
+
+			<p align="justify">Park I.W., Fernandino M., Dorao C.A. (2018). Wetting state transitions over hierarchical conical microstructures. Adv. Mater. Interfaces, 1701039.</p>
+
+			<p align="justify">Auliano M., Fernandino M., Zhang P., Dorao C.A. (2017). The Leidenfrost phenomenon on sub-micron tapered pillars. ASME 2017 15th International Conference on Nanochannels, Microchannels, and Minichannels; 2017-08-27 - 2017-08-31.</p>
+
+			<p align="justify">Park I.W., Fernandino M., Dorao C.A. (2016). Effect of micropillar characteristics on Leidenfrost temperature of impacting droplets. ASME 14th International Conference on Nanochannels, Microchannels, and Minichannels (ICNMM2016), 10-14 July, Washington DC, USA.</p>
+
+			<p align="justify">Auliano M., Fernandino M., Peng Z., Dorao C.A. (2016). The Leidenfrost phenomenon on silicon nanowires. ASME 14th International Conference on Nanochannels, Microchannels, and Minichannels (ICNMM2016), 10-14 July, Washington DC, USA.</p>
+
+
+&nbsp; 
+			
+		</div>
+      </div>
+	</div> 
+	   
+	  
+  <hr width="85%" size="20" color="blue" noshade>	  
+
+  <div class="container">
+		<h2>PhD Thesis </h2>
+   </div>
+	 
+	    <div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+			<p align="justify"> Wenwu Ding, (2021). Conical micro-structures for super-repellent surfaces and their effect on droplet impact. Supervisor: Maria Fernandino</p>
+			
+			<p align="justify"> Il Woong Park , (2018). Two-phase flow instabilities during flow boiling and control of wettability by micro-structured surfaces. Supervisor: Carlos A. Dorao</p>
+			
+			
+		</div>
+      </div>
+	</div> 
+  
+	<hr width="85%" size="20" color="blue" noshade>	  
+  
+  <div class="container">
+		<h2>Project and MSc Thesis </h2>
+   </div>
+	 
+	    <div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+			
+			
+	
+			<p align="justify"> Øyvind Huuse. Micro-nano enhanced surface design and fabrication of micro pillars for pool boiling. Project Thesis.</p>
+
+			<p align="justify"> Eivind Grøstad, (2015). Micro engineered surfaces for enhanced heat transfer. Project Thesis. </p>
+
+			<p align="justify"> Deukkyu Lee, (2015). Fabricating microscale pillars on the silicon wafer with SU-8 5 and its application. Project Thesis.</p>
+			
+		</div>
+      </div>
+	</div> 
+	  
+	  
+	  	<hr width="85%" size="20" color="blue" noshade>	  
+
+	  
+	<h6>&nbsp; </h6>
+	  
+	 
+	<footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Thermal Two-Phase Flow Lab. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	 
+	<!-- Default Statcounter code for newTh2PFLOW
+https://folk.ntnu.no/fernandi/ -->
+<script type="text/javascript">
+var sc_project=12997559; 
+var sc_invisible=1; 
+var sc_security="a79eac0b"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12997559/0/a79eac0b/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+		  
+	  
+	 
+
+  </body>
+</html>

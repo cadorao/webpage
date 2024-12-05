@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <title>Thermal Two-Phase Flow Lab</title>
+	  <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	   <style>
+            /*Code to change color of active link*/
+            .navbar-nav > .active > a {
+                color: red;
+            }
+        </style>
+	  	<link rel="icon" href="images/Th2LabLogo_transparent.png"  sizes="16x16 32x32" type="image/png">
+	  
+	  
+  </head>
+  <body style="padding-top: 70px">
+  	<div class="container-fluid">
+  	  <div class="container">
+		  
+	   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> 
+		         <a class="navbar-brand" href="#">  <img src="images/Th2FLabLogo2_transparent3.png" width="319" height="62" alt=""/></a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  	      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+  	        <ul class="navbar-nav mr-auto">
+  	          <li class="nav-item" > <a class="nav-link" href="index.html" >Home <span class="sr-only">(current)</span></a> </li>
+  	          
+  	          <li class="nav-item dropdown active"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Research </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_wetting.html">Wetting and Droplet Dynamics</a> 
+				  <a class="dropdown-item" href="index_numerics.html">Numerical Methods for Interfacial Flows</a>
+				  <a class="dropdown-item" href="index_thermohydraulics.html">Thermohydraulics</a> 
+				  <a class="dropdown-item" href="index_acoustofluidicsR.html">Acoustofluidics and Biosensors</a>
+					
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_previousResearch.html">Previous Research</a> </div>
+              </li>
+  	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> People&nbsp; </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_PI.html">PIs</a> 
+					<a class="dropdown-item" href="index_team.html">Team</a>
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_alumni.html">Alumni</a></div>
+              </li>
+  	          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Facilities&nbsp; </a>
+  	            <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				  <a class="dropdown-item" href="index_TPFI.html">Two-phase flow instabilities</a> 
+				  <a class="dropdown-item" href="index_acoustofluidics.html">Acoustofluidics and biosensors</a>
+				  <a class="dropdown-item" href="index_condensation.html">Condensation</a>
+				  <a class="dropdown-item" href="index_DHM.html">Digital Holographic Microscopy</a>
+				  <a class="dropdown-item" href="index_microPIVLIF.html">MicroPIV-LIF</a>
+				  <a class="dropdown-item" href="index_thermography.html">Thermography</a>
+					
+  	              <div class="dropdown-divider"></div>
+  	              <a class="dropdown-item" href="index_equipment.html">Equipment</a></div>
+              </li>
+			  <li class="nav-item"> <a class="nav-link" href="index_projects.html">Projects</a> </li>
+			  <li class="nav-item"> <a class="nav-link" href="index_innovation.html">Innovation</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_publications.html">Publications</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_education.html">Education</a></li>
+			  <li class="nav-item"> <a class="nav-link" href="index_gallery.html">Gallery</a></li>
+	
+            </ul>
+  	        <form class="form-inline my-2 my-lg-0">
+            </form>
+          </div>
+        </nav>
+      </div>
+	  
+	  
+	  
+	    
+	  
+	  <div class="container mt-2">
+      <div class="row">
+        <div class="col-12">
+			  
+		    <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" style="background-color: grey">
+			    <ol class="carousel-indicators">
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+			      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+		      </ol>
+			    <div class="carousel-inner" role="listbox">
+			      <div class="carousel-item active"> 
+				      <img class="d-block mx-auto" src="images/NumericalMethods/NumericalMethods_3.png" alt="First slide">
+			        
+				    <div class="carousel-caption">
+		            </div>
+		          </div>
+			      <div class="carousel-item"> 
+				      <img class="d-block mx-auto" src="images/NumericalMethods/NumericalMethods_4.png" alt="First slide">
+					  <div class="carousel-caption">
+		            </div>
+		          </div>
+				  
+			      <div class="carousel-item"> 
+				      <img class="d-block mx-auto" src="images/NumericalMethods/NumericalMethods_5.png" alt="First slide">
+			        <div class="carousel-caption">
+		            </div>
+		          </div>
+		      </div>
+			    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+        </div>
+      </div>
+    </div>
+	  
+     
+	 <hr>	
+		
+	<div class="container">
+		<h2>Numerical Methods for Interfacial Flows </h2>
+		<p align="justify"> Numerical simulation of two-phase flows presents challenges such as representation of moving interfaces, fluid properties changing abruptly in a short length scale, surface tension effects difficult to capture numerically and the multiscale problem related to fluid-solid interaction near contact lines. Phase change phenomena such as evaporation and condensation add complexities to the problem. Our research focuses on diffuse interface methods for studying interfacial flows with phase change. In particular, we work with the Navier-Stokes-Korteweg model, which considers the fluid density as the phase-field parameter for identifying the liquid and vapor phases. The model handles compressible two-phase flow dynamics through van der Waals’ gradient theory along with a non-convex equation of state, which endows capillarity effects and phase transformation without ad-hoc assumptions on the gas-liquid interface. With this model we investigate heat and mass transfer processes during evaporation and condensation of droplets, trying to understand how local changes of the interface curvature and local thermodynamic conditions affect the phase change phenomena. The Navier-Stokes-Korteweg model is solved numerically by our in-house Least Squares Spectral Element Method simulation code. The code is a multi-purpose simulation platform including high order C0 Lagrangian interpolant polynomials, and C1 third order Hermite functions extended with bubbles functions. A non-conforming adaptive mesh refinement strategy using mortar elements is used to achieve the necessary resolution at fluid interfaces. The final system is solved by a parallel element-by-element CG or alternative direct solvers.</p> 
+	  </div>
+	</div>
+	
+
+  
+	  <hr width="85%" size="20" color="blue" noshade>	
+  
+	  
+	 
+	 	  
+	
+	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			      		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/NumericalMethods/numerics_NSK.png" width="350" height="350" alt=""/>
+				<h6>&nbsp;</h6>   
+			</center>
+
+	      </div>
+		<div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+   		  <p align="justify">  In this study, we show that local interface temperature variations are mainly due to evaporative cooling, and that the new temperature influences local mass flux during the evaporation of deformed droplets. We employ direct numerical simulations through the thermally coupled Navier–Stokes–Korteweg model – a diffuse interface model grounded in van der Waals square-gradient theory – and a space–time least-squares spectral element method in two dimensions. With this model, we effectively capture the dynamics of the droplet and its interface, accounting for droplet deformation and evaporative cooling effects. </p>
+					<p align="justify">Vitor H.C. Cunha, Julián N. García Hahn, Carlos A. Dorao, Maria Fernandino (2024). Investigation of the effect of curvature on the local mass flux of evaporating droplets using a phase field method, International Journal of Multiphase Flow. 174, 104771
+          </p>
+			  
+    	</div>
+  	</div>
+</div>		
+  
+	  
+	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">  In this work, a redefined energy functional is presented, which ensures a proper energy balance. While avoiding the nonphysical bulk diffusion, it achieves conservation of (enclosed) mass as well. Furthermore, overall system dynamics remain comparable to the classic energy functional. The redefined energy potential is still able to model spinodal decomposition, while it matches sharp interface results better when applied to a two-phase system. </p>
+			
+			  <p align="justify">Kwakkel M., Fernandino M., Dorao C.A. (2020). A redefined energy functional to prevent mass loss in phase-field methods. AIP Advances 10, 065124.</p>
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/NumericalMethods/numerics_newFunctional.png" width="350" height="350" alt=""/>
+				<h6>&nbsp;</h6>   
+			</center>
+    	</div>
+  	</div>
+</div>		
+
+	   
+<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>	
+	  
+	  	  
+	  	 
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			      		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/NumericalMethods/numerics_Mortar_CH.png" width="350" height="350" alt=""/>
+				<h6>&nbsp;</h6>   
+			</center>
+
+	      </div>
+		<div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">  In this work, a C1 continuous h-adaptive mesh refinement technique with the least-squares spectral element method is presented. It is applied to the Navier– Stokes-Cahn–Hilliard (NSCH) system and the isothermal Navier–Stokes–Korteweg (NSK) system. Hermite polynomials are used to give global differentiability in the approximated solution, and a space–time coupled formulation and the element-by-element technique are implemented. </p>
+					<p align="justify">Park K., Gerritsma M., Fernandino M. (2018). C1 continuous h-adaptive least-squares spectral element method for phase field models. Comp. Math. with Appl. 75, 1582-1594.</p>
+			  
+    	</div>
+  	</div>
+</div>		
+
+	<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>	  
+	  
+	<div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+    		<p align="justify">  A diffuse interface method was presented for simulating the evaporation process for a single bubble in a flow stream. The method was implemented using a least-squares finite-element method. A model for taking into account evaporation effects was implemented as a volumetric source term taking advantage of the diffuse interface formulation used for the simulation </p>
+					<p align="justify">La Forgia N., Fernandino M., Dorao C.A. (2014). Numerical simulation of evaporation process of two-phase flow in small-diameter channels. Heat Transfer Engineering, 35, 440-451.</p>
+			  
+	      </div>
+		<div class="col-lg-6">
+    		<center>
+				<h6>&nbsp;</h6> 
+			<img src="images/NumericalMethods/numerics_CSF.png" width="350" height="350" alt=""/>
+			</center>
+<h6>&nbsp;</h6>   		
+    	</div>
+  	</div>
+</div>		
+
+ 
+<div class="container">
+	  <h6>&nbsp;</h6> 
+</div>		  
+	  
+	   
+	  <div class="container">
+  	  <div class="row">
+		  <div class="col-lg-6">
+			  <h6>&nbsp;</h6>   
+			  <center>
+			<img src="images/NumericalMethods/numerics_fracDer.png" width="350" height="350" alt=""/>
+			</center>
+	  
+						<h6>&nbsp;</h6>   
+					
+			  
+	      </div>
+		<div class="col-lg-6">
+			<h1>&nbsp;</h1>    
+		  <center>
+				
+				 <p align="justify">  Fractional derivatives provide a general approach for modeling transport phenomena occurring in diverse fields. In this article, the Least Squares Spectral Method is applied for solving advection–dispersion equations using Caputo or Riemann–Liouville fractional derivatives.</p>
+			<h6>&nbsp;</h6> 
+			<p align="justify">Carella, A.R., Dorao, C.A. (2013). Least-Squares Spectral Method for the solution of a fractional advection-dispersion equation. Journal of Computational Physics, 232(1), 33-45.</p>
+
+				
+				
+			</center>
+    	</div>
+  	</div>
+</div>		
+	  
+	  
+	  
+	  
+   <div class="container">
+		<h2>Publications </h2>
+   </div>
+	 
+    <div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+			
+			<p align="justify"> Kwakkel M., Fernandino M., Dorao C.A. (2020). A redefined energy functional to prevent mass loss in phase-field methods. AIP Advances 10, 065124.</p>
+
+			<p align="justify"> Park K., Dorao C.A., Fernandino M. (2018). Thermal two-phase flow with a phase field method. Int. J. Multiphase Flow 100, 77-85.</p>
+
+			<p align="justify"> Park K., Gerritsma M., Fernandino M. (2018). C1 continuous h-adaptive least-squares spectral element method for phase field models. Comp. Math. with Appl. 75, 1582-1594.</p>
+
+			<p align="justify"> Park K., Fernandino M., Dorao C.A., Gerritsma M. (2017). The least-squares spectral element method for phase-field models for isothermal fluid mixture. Comp. Math. with Appl. 74., 1981-1998.</p>
+
+			<p align="justify"> Park K., Fernandino M., Dorao C.A. (2016). Numerical solution of incompressible Cahn-Hilliard and Navier-Stokes system with large density and viscosity ratio using the least-squares spectral element method. J. Fluid Flow, Heat and Mass Transfer 3, 73-85.</p>
+
+			<p align="justify"> Deng H, Fernandino M., Dorao C.A. (2015). A numerical investigation of flow boiling of non-azeotropic and near-azeotropic binary mixtures. Int. J. of Refrigeration, 49, 99-109.</p>
+
+			<p align="justify"> Deng H, Fernandino M., Dorao C.A. (2015). Modeling of annular-mist flow during mixtures boiling. Applied Thermal Engineering, 91, 463-470.</p>
+
+			<p align="justify"> Deng H., Fernandino M., Dorao C.A. (2014). Numerical study of heat and mass transfer of binary mixtures condensation in mini-channels. Int. Comm. Heat and Mass Transfer, 58, 45-53.</p>
+
+			<p align="justify"> La Forgia N., Fernandino M., Dorao C.A. (2014). Numerical simulation of evaporation process of two-phase flow in small-diameter channels. Heat Transfer Engineering, 35, 440-451.</p>
+
+			<p align="justify"> Carella, A.R., Dorao, C.A. (2013) View Correspondence (jump link) Least-Squares Spectral Method for the solution of a fractional advection-dispersion equation. Journal of Computational Physics, 232(1), 33-45.</p>
+
+			<p align="justify"> Manavela Chiapero E., Fernandino M., Dorao C.A. (2013). Numerical analysis of pressure drop oscillations in parallel channels. Int. J. Multiphase Flow, 56, 15-24.</p>
+
+			<p align="justify"> Manavela Chiapero E., Fernandino M., Dorao C.A. (2013). On the influence of heat flux updating during pressure drop oscillations – A numerical analysis. Int. J. Heat and Mass Transfer, 63, 31-40.</p>
+
+			<p align="justify"> Ruspini L.C., Dorao C.A., Fernandino M. (2011). Simulation of a natural circulation loop using a least squares hp-adaptive solver, Mathematics and Computers in Simulation, 81(11), 2517-2528.el. Experimental Thermal and Fluid Science 83, 78-87. </p>
+
+			<p align="justify"> Fernandino M., Dorao C.A. (2011). The least squares spectral element method for the Cahn-Hilliard equation, Appl. Math. Modell., 35(2), 797-806.</p>
+
+			<p align="justify"> Dorao, C.A. (2011). Simulation of thermal disturbances with finite wave speeds using a high order method. Journal of Computational and Applied Mathematics, 231(2), 637-647.</p>
+
+			<p align="justify"> Dorao C.A., Fernandino M., Jakobsen H.A., Svendsen H.F. (2009). hp-adaptive spectral element solver for reactor modelling, Chem. Eng. Science, vol. 64(5), pp. 904-911.</p>
+
+			<p align="justify"> Fernandino M., Dorao C.A., Jakobsen H.A. (2007). Jacobi Galerkin Spectral Method for Cylindrical and Spherical Geometries, Chemical Engineering Science, Vol. 62 (23), pp. 6777-6783.</p>
+
+			<p align="justify"> Dorao, C.A., Jakobsen, H.A. (2007). A parallel time-space least squares spectral method for incompressible flow problems. Applied Mathematics and Computation, 185(1), 45-58.</p>
+			
+		  		&nbsp; 
+			
+		</div>
+      </div>
+	</div> 
+	   
+	  
+  <hr width="85%" size="20" color="blue" noshade>	  
+
+  <div class="container">
+		<h2>PhD Thesis </h2>
+   </div>
+	 
+	    <div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+			<p align="justify"> Keunsoo Park, (2017). Phase-field models for two-phase flows using the least-squares method. Supervisor: Maria Fernandino.</p>
+
+			<p align="justify"> Nicolas La Forgia, (2014). Experimental facility design and a diffuse interface numerical model for studying evaporating bubbles in mini-channels. Supervisor: Maria Fernandino.</p>
+			
+		</div>
+      </div>
+	</div> 
+  
+	<hr width="85%" size="20" color="blue" noshade>	  
+  
+  <div class="container">
+		<h2>MSc Thesis </h2>
+   </div>
+	 
+	    <div class="container">
+	  <div class="row">
+	    <div class="col-lg-12">
+
+			<p align="justify"> Luis Ugueto, (2013). Experimental Study of Density Wave Oscillations. MSc Thesis. NTNU.</p>
+
+			<p align="justify"> Dejan Doder, (2013). Experimental analysis of the pressure characteristic cruve of a forced convection boiling flow in horizontal channel. MSc Thesis. NTNU.</p>
+
+			<p align="justify"> Dag Stromsvag, (2011). Fundamental mechanisms of density wave oscillations and the effect of subcooling. MSc Thesis. NTNU.</p>
+
+
+			
+		</div>
+      </div>
+	</div> 
+	  
+	  
+	  	<hr width="85%" size="20" color="blue" noshade>	  
+
+	  
+	<h6>&nbsp; </h6>
+	  
+	 
+	<footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © Thermal Two-Phase Flow Lab. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+	 
+	  <!-- Default Statcounter code for newTh2PFLOW
+https://folk.ntnu.no/fernandi/ -->
+<script type="text/javascript">
+var sc_project=12997559; 
+var sc_invisible=1; 
+var sc_security="a79eac0b"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12997559/0/a79eac0b/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+		
+	 
+  </body>
+</html>
